@@ -29,15 +29,14 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
  * A very simple OpMode that changes what is sent to the drivers' station
  * telemetry each time the driver "a" button is pressed.
  */
-@TeleOp(name="Mark's Example")
+@TeleOp(name="Mark's Example OpMode")
 public class SimpleTeleOp extends OpMode {
-    private NinjaGamePad gamepad;
 
     private ToggledButton aButtonToggled;
 
     @Override
     public void init() {
-        gamepad = new NinjaGamePad(gamepad1);
+        NinjaGamePad gamepad = new NinjaGamePad(gamepad1);
         aButtonToggled = new ToggledButton(gamepad.getAButton());
     }
 
