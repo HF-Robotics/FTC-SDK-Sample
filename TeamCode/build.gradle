@@ -31,6 +31,6 @@ dependencies {
     testImplementation 'com.google.guava:guava-testlib:27.1-android'
     api 'com.google.guava:guava:27.1-android'
     implementation files('../libs/tnt-ftc-corelib-0.5-SNAPSHOT.aar')
-    testImplementation files('../libs/tnt-ftc-fakeHardware-0.5-SNAPSHOT.aar')
+    implementation files('../libs/tnt-ftc-fakeHardware-0.5-SNAPSHOT.aar')
 }
 
